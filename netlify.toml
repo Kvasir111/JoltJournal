@@ -1,0 +1,9 @@
+[build]
+  command = "pnpm run build"
+  publish = "dist"
+
+[build.environment]
+  # These values are intentionally public Supabase client configuration and
+  # are embedded by Nuxt. Keep scanning enabled for SUPABASE_SECRET_KEY and
+  # every other environment variable.
+  SECRETS_SCAN_OMIT_KEYS = "SUPABASE_URL,SUPABASE_KEY,SUPABASE_PUBLISHABLE_KEY"
