@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Jolt Journal rune shield">
+  <rect width="512" height="512" rx="96" fill="#07080a"/>
+  <path d="M256 55 417 120v118c0 103-60 179-161 219C155 417 95 341 95 238V120L256 55Z" fill="#111318" stroke="#e1062c" stroke-width="22"/>
+  <path d="m275 106-91 166h63l-27 134 108-183h-68l15-117Z" fill="#e1062c"/>
+  <path d="M119 150h58M335 150h58M119 360h52M341 360h52" stroke="#d9ff57" stroke-width="12" stroke-linecap="square"/>
+</svg>

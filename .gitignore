@@ -1,0 +1,8 @@
+.nuxt
+.output
+node_modules
+.data
+.env
+.DS_Store
+npm-debug.log*
+supabase/.temp

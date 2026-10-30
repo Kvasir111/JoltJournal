@@ -1,0 +1,1591 @@
+[
+  {
+    "id": "monster-2-green-original-flavor",
+    "brand": "Monster",
+    "flavor": "Green (original flavor)",
+    "rating": 5,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "monster-3-ultra-zero-red",
+    "brand": "Monster",
+    "flavor": "Ultra Zero Red",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-4-nitro-super-dry",
+    "brand": "Monster",
+    "flavor": "Nitro Super Dry",
+    "rating": 6,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-5-nitro-cosmic-peach",
+    "brand": "Monster",
+    "flavor": "Nitro (Cosmic Peach)",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-6-peaches-and-cream",
+    "brand": "Monster",
+    "flavor": "Peaches and Cream",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-7-reserve-kiwi-strawberry",
+    "brand": "Monster",
+    "flavor": "Reserve (Kiwi Strawberry)",
+    "rating": 6,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "monster-8-reserve-white-pineapple",
+    "brand": "Monster",
+    "flavor": "Reserve (White Pineapple)",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "monster-9-reserve-watermelon",
+    "brand": "Monster",
+    "flavor": "Reserve (Watermelon)",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-10-orange-dreamsicle",
+    "brand": "Monster",
+    "flavor": "Orange Dreamsicle",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-11-import",
+    "brand": "Monster",
+    "flavor": "Import",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-12-low-carb",
+    "brand": "Monster",
+    "flavor": "Low Carb",
+    "rating": 4,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "monster-13-ultra-zero-white",
+    "brand": "Monster",
+    "flavor": "Ultra Zero White",
+    "rating": 6,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "monster-14-ultra-sunrise",
+    "brand": "Monster",
+    "flavor": "Ultra Sunrise",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-15-ultra-blue",
+    "brand": "Monster",
+    "flavor": "Ultra Blue",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-16-ultra-peachy-keen",
+    "brand": "Monster",
+    "flavor": "Ultra Peachy Keen",
+    "rating": 3,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "monster-17-ultra-paradise",
+    "brand": "Monster",
+    "flavor": "Ultra Paradise",
+    "rating": 5,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "monster-18-ultra-zero-watermelon",
+    "brand": "Monster",
+    "flavor": "Ultra Zero Watermelon",
+    "rating": 2,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-19-ultra-gold",
+    "brand": "Monster",
+    "flavor": "Ultra Gold",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "monster-20-ultra-rosa",
+    "brand": "Monster",
+    "flavor": "Ultra Rosa",
+    "rating": 6,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-21-ultra-violet",
+    "brand": "Monster",
+    "flavor": "Ultra Violet",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-22-ultra-red",
+    "brand": "Monster",
+    "flavor": "Ultra Red",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-23-ultra-black",
+    "brand": "Monster",
+    "flavor": "Ultra Black",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-24-ultra-strawberry-dreams",
+    "brand": "Monster",
+    "flavor": "Ultra Strawberry Dreams",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-25-ultimate-fiesta-mango",
+    "brand": "Monster",
+    "flavor": "Ultimate Fiesta Mango",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "monster-26-java-all",
+    "brand": "Monster",
+    "flavor": "Java (ALL)",
+    "rating": 1,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-27-juice-mango-loco",
+    "brand": "Monster",
+    "flavor": "Juice Mango Loco",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "monster-28-juice-pacific-punch",
+    "brand": "Monster",
+    "flavor": "Juice Pacific Punch",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-29-juice-pipeline-punch",
+    "brand": "Monster",
+    "flavor": "Juice Pipeline Punch",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "monster-30-juice-rio-punch",
+    "brand": "Monster",
+    "flavor": "Juice Rio Punch",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-31-rehab-tea-lemonade",
+    "brand": "Monster",
+    "flavor": "Rehab Tea + Lemonade",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-32-rehab-peach-tea",
+    "brand": "Monster",
+    "flavor": "Rehab Peach Tea",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-33-rehab-wild-berry-tea",
+    "brand": "Monster",
+    "flavor": "Rehab Wild Berry Tea",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-34-rehab-green-tea",
+    "brand": "Monster",
+    "flavor": "Rehab Green Tea",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-35-rehab-strawberry-lemonade",
+    "brand": "Monster",
+    "flavor": "Rehab Strawberry Lemonade",
+    "rating": 6,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "monster-36-rehab-watermelon",
+    "brand": "Monster",
+    "flavor": "Rehab Watermelon",
+    "rating": 2,
+    "buyAgain": "no"
+  },
+  {
+    "id": "monster-37-ultra-vice-guava",
+    "brand": "Monster",
+    "flavor": "Ultra Vice Guava",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "monster-38-viking-berry",
+    "brand": "Monster",
+    "flavor": "Viking Berry",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "monster-39-hawaiian-blue",
+    "brand": "Monster",
+    "flavor": "Hawaiian Blue",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "monster-40-lando-norris",
+    "brand": "Monster",
+    "flavor": "Lando Norris",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "reign-2-sour-gummy-worm",
+    "brand": "Reign",
+    "flavor": "Sour Gummy Worm",
+    "rating": 9,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "reign-3-reignbow-sherbet",
+    "brand": "Reign",
+    "flavor": "Reignbow Sherbet",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "reign-4-white-gummy-bear",
+    "brand": "Reign",
+    "flavor": "White Gummy Bear",
+    "rating": 6,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "reign-5-sour-heads",
+    "brand": "Reign",
+    "flavor": "Sour Heads",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "reign-6-razzle-berry",
+    "brand": "Reign",
+    "flavor": "Razzle Berry",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "reign-7-lychee",
+    "brand": "Reign",
+    "flavor": "Lychee",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "reign-8-orange-dreamsicle",
+    "brand": "Reign",
+    "flavor": "Orange Dreamsicle",
+    "rating": 7,
+    "buyAgain": "no"
+  },
+  {
+    "id": "reign-9-tropical-storm",
+    "brand": "Reign",
+    "flavor": "Tropical Storm",
+    "rating": 6,
+    "buyAgain": "no"
+  },
+  {
+    "id": "reign-10-melon-mania",
+    "brand": "Reign",
+    "flavor": "Melon Mania",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "reign-11-cherry-limade",
+    "brand": "Reign",
+    "flavor": "Cherry Limade",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "reign-12-red-dragon",
+    "brand": "Reign",
+    "flavor": "Red Dragon",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "reign-13-watermelon-warlord",
+    "brand": "Reign",
+    "flavor": "Watermelon Warlord",
+    "rating": 2,
+    "buyAgain": "no"
+  },
+  {
+    "id": "reign-14-white-haze",
+    "brand": "Reign",
+    "flavor": "White Haze",
+    "rating": 5,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-2-skittles",
+    "brand": "C4",
+    "flavor": "Skittles",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-3-grape-popsicle",
+    "brand": "C4",
+    "flavor": "Grape Popsicle",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "c4-4-hawaiian-popsicle",
+    "brand": "C4",
+    "flavor": "Hawaiian Popsicle",
+    "rating": 6,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-5-orange-creamsicle",
+    "brand": "C4",
+    "flavor": "Orange Creamsicle",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "c4-6-cherry-popsicle",
+    "brand": "C4",
+    "flavor": "Cherry Popsicle",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "c4-7-strawberry-starburst",
+    "brand": "C4",
+    "flavor": "Strawberry Starburst",
+    "rating": 5,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-8-cherry-starburst",
+    "brand": "C4",
+    "flavor": "Cherry Starburst",
+    "rating": 5,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-9-lemon-starburst",
+    "brand": "C4",
+    "flavor": "Lemon Starburst",
+    "rating": 6,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-10-orange-starburst",
+    "brand": "C4",
+    "flavor": "Orange Starburst",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "c4-11-frozen-bombsicle",
+    "brand": "C4",
+    "flavor": "Frozen Bombsicle",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-12-orange-slice",
+    "brand": "C4",
+    "flavor": "Orange Slice",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "c4-13-cherry-limade",
+    "brand": "C4",
+    "flavor": "Cherry Limade",
+    "rating": 6,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-14-artic-snow-cone",
+    "brand": "C4",
+    "flavor": "Artic Snow Cone",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "c4-15-midnight-cherry",
+    "brand": "C4",
+    "flavor": "Midnight Cherry",
+    "rating": 5,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-16-grape-frost",
+    "brand": "C4",
+    "flavor": "Grape Frost",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "c4-17-strawberry-watermelon-ice",
+    "brand": "C4",
+    "flavor": "Strawberry Watermelon Ice",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "c4-18-mango-foxtrot",
+    "brand": "C4",
+    "flavor": "Mango Foxtrot",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "c4-19-ultimate-artic-snow-cone",
+    "brand": "C4",
+    "flavor": "Ultimate Artic Snow Cone",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "c4-20-ultimate-fruit-punch",
+    "brand": "C4",
+    "flavor": "Ultimate Fruit Punch",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "c4-21-ultimate-orange-cream",
+    "brand": "C4",
+    "flavor": "Ultimate Orange Cream",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "c4-22-ultimate-berry-powerbomb",
+    "brand": "C4",
+    "flavor": "Ultimate Berry Powerbomb",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-23-ultimate-ruthless-raspberry",
+    "brand": "C4",
+    "flavor": "Ultimate Ruthless Raspberry",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-24-watermelon-jolly-rancher",
+    "brand": "C4",
+    "flavor": "Watermelon Jolly Rancher",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-25-blue-jolly-rancher",
+    "brand": "C4",
+    "flavor": "Blue Jolly Rancher",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-26-green-jolly-rancher",
+    "brand": "C4",
+    "flavor": "Green Jolly Rancher",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-27-tropical-tundra-frost",
+    "brand": "C4",
+    "flavor": "Tropical Tundra Frost",
+    "rating": 6,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-28-dreamsicle-popsicle",
+    "brand": "C4",
+    "flavor": "Dreamsicle Popsicle",
+    "rating": 6,
+    "buyAgain": "no"
+  },
+  {
+    "id": "c4-29-hawaiian-punch",
+    "brand": "C4",
+    "flavor": "Hawaiian Punch",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-30-ultimate-electric-sour-apple",
+    "brand": "C4",
+    "flavor": "Ultimate Electric Sour Apple",
+    "rating": 6,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-31-strawberry-blast",
+    "brand": "C4",
+    "flavor": "Strawberry Blast",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-32-sour-gummy-splash",
+    "brand": "C4",
+    "flavor": "Sour Gummy Splash",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-33-frost-berry-freeze",
+    "brand": "C4",
+    "flavor": "Frost Berry Freeze",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "c4-34-yellow-lemonade",
+    "brand": "C4",
+    "flavor": "Yellow Lemonade",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-35-blue-razzilla",
+    "brand": "C4",
+    "flavor": "Blue Razzilla",
+    "rating": 6,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-36-pink-lemonade",
+    "brand": "C4",
+    "flavor": "Pink Lemonade",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "c4-37-cereal-killer",
+    "brand": "C4",
+    "flavor": "Cereal Killer",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "c4-38-raspberry-lemonade",
+    "brand": "C4",
+    "flavor": "Raspberry Lemonade",
+    "rating": 9,
+    "buyAgain": "no"
+  },
+  {
+    "id": "red-bull-2-original",
+    "brand": "Red Bull",
+    "flavor": "Original",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "red-bull-3-iced-vanilla-berry",
+    "brand": "Red Bull",
+    "flavor": "Iced Vanilla Berry",
+    "rating": 6,
+    "buyAgain": "no"
+  },
+  {
+    "id": "red-bull-4-zero-sugar",
+    "brand": "Red Bull",
+    "flavor": "Zero Sugar",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "red-bull-5-peach-edition",
+    "brand": "Red Bull",
+    "flavor": "Peach Edition",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "red-bull-6-blue-edition",
+    "brand": "Red Bull",
+    "flavor": "Blue Edition",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "red-bull-7-coconut-edition",
+    "brand": "Red Bull",
+    "flavor": "Coconut Edition",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "red-bull-8-red-edition",
+    "brand": "Red Bull",
+    "flavor": "Red Edition",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "red-bull-9-yellow-edition",
+    "brand": "Red Bull",
+    "flavor": "Yellow Edition",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "red-bull-10-green-edition",
+    "brand": "Red Bull",
+    "flavor": "Green Edition",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "ryse-2-sour-blue-raspberry",
+    "brand": "Ryse",
+    "flavor": "Sour Blue Raspberry",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ryse-3-sour-green-apple",
+    "brand": "Ryse",
+    "flavor": "Sour Green Apple",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ryse-4-peach-cooler",
+    "brand": "Ryse",
+    "flavor": "Peach Cooler",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ryse-5-sunnyd",
+    "brand": "Ryse",
+    "flavor": "SunnyD",
+    "rating": 2,
+    "buyAgain": "no"
+  },
+  {
+    "id": "ryse-6-pink-splash",
+    "brand": "Ryse",
+    "flavor": "Pink Splash",
+    "rating": 5,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ryse-7-rainbow-sherbert",
+    "brand": "Ryse",
+    "flavor": "Rainbow Sherbert",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "ryse-8-baja-cooler",
+    "brand": "Ryse",
+    "flavor": "Baja Cooler",
+    "rating": 5,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ryse-9-strawberry-squeeze",
+    "brand": "Ryse",
+    "flavor": "Strawberry Squeeze",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "ryse-10-kool-aid-tropical-punch",
+    "brand": "Ryse",
+    "flavor": "Kool-Aid Tropical Punch",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "ryse-11-ring-pop-berry-blast",
+    "brand": "Ryse",
+    "flavor": "Ring Pop Berry Blast",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "ryse-12-cotton-candy",
+    "brand": "Ryse",
+    "flavor": "Cotton Candy",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "ryse-13-lemonade",
+    "brand": "Ryse",
+    "flavor": "Lemonade",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ghost-2-cirtis",
+    "brand": "Ghost",
+    "flavor": "Cirtis",
+    "rating": 6,
+    "buyAgain": "no"
+  },
+  {
+    "id": "ghost-3-swedish-fish",
+    "brand": "Ghost",
+    "flavor": "Swedish Fish",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ghost-4-tropical-mango",
+    "brand": "Ghost",
+    "flavor": "Tropical Mango",
+    "rating": 6,
+    "buyAgain": "no"
+  },
+  {
+    "id": "ghost-5-sour-patch-red",
+    "brand": "Ghost",
+    "flavor": "Sour Patch Red",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ghost-6-sour-patch-blue",
+    "brand": "Ghost",
+    "flavor": "Sour Patch Blue",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ghost-7-electric-limade",
+    "brand": "Ghost",
+    "flavor": "Electric Limade",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "ghost-8-sour-watermelon",
+    "brand": "Ghost",
+    "flavor": "Sour Watermelon",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "ghost-9-sour-green-apple",
+    "brand": "Ghost",
+    "flavor": "Sour Green Apple",
+    "rating": 6,
+    "buyAgain": "no"
+  },
+  {
+    "id": "ghost-10-cherry-limade",
+    "brand": "Ghost",
+    "flavor": "Cherry Limade",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ghost-11-sour-pink-lemonade",
+    "brand": "Ghost",
+    "flavor": "Sour Pink Lemonade",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ghost-12-faze-white",
+    "brand": "Ghost",
+    "flavor": "Faze White",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "ghost-13-faze-green",
+    "brand": "Ghost",
+    "flavor": "Faze Green",
+    "rating": 6,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ghost-14-orange-cream",
+    "brand": "Ghost",
+    "flavor": "Orange Cream",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "ghost-15-welches-grape",
+    "brand": "Ghost",
+    "flavor": "Welches Grape",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ghost-16-bubbalichious-pink",
+    "brand": "Ghost",
+    "flavor": "Bubbalichious Pink",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ghost-17-bombsicle",
+    "brand": "Ghost",
+    "flavor": "Bombsicle",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "ghost-18-sour-strips-rainbow",
+    "brand": "Ghost",
+    "flavor": "Sour Strips Rainbow",
+    "rating": 9,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ghost-19-bubbalichious-blue",
+    "brand": "Ghost",
+    "flavor": "Bubbalichious Blue",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ghost-20-peaches",
+    "brand": "Ghost",
+    "flavor": "Peaches",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ghost-21-original",
+    "brand": "Ghost",
+    "flavor": "Original",
+    "rating": 5,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ghost-22-bubbalicious",
+    "brand": "Ghost",
+    "flavor": "Bubbalicious",
+    "rating": 7,
+    "buyAgain": "no"
+  },
+  {
+    "id": "ghost-23-strawberry-lemonade",
+    "brand": "Ghost",
+    "flavor": "Strawberry Lemonade",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ghost-24-welches-grape-cran",
+    "brand": "Ghost",
+    "flavor": "Welches Grape-Cran",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ghost-25-strawbango",
+    "brand": "Ghost",
+    "flavor": "strawbango",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "ghost-26-iced-tea-lemonade",
+    "brand": "Ghost",
+    "flavor": "Iced Tea Lemonade",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "ghost-27-raspberry-cream",
+    "brand": "Ghost",
+    "flavor": "Raspberry Cream",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "ghost-28-sour-strips-appleberry",
+    "brand": "Ghost",
+    "flavor": "Sour Strips AppleBerry",
+    "rating": 9,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "misc-2-original",
+    "brand": "AMP",
+    "flavor": "Original",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "misc-3-cherry",
+    "brand": "AMP",
+    "flavor": "Cherry",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "misc-4-original",
+    "brand": "Full throttle",
+    "flavor": "Original",
+    "rating": 2,
+    "buyAgain": "no"
+  },
+  {
+    "id": "misc-5-blue",
+    "brand": "Full Throttle",
+    "flavor": "Blue",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "misc-6-original",
+    "brand": "SPIKE",
+    "flavor": "Original",
+    "rating": 6,
+    "buyAgain": "no"
+  },
+  {
+    "id": "misc-7-pink-lemonade",
+    "brand": "SPIKE",
+    "flavor": "Pink Lemonade",
+    "rating": 7,
+    "buyAgain": "no"
+  },
+  {
+    "id": "misc-8-purple",
+    "brand": "Colorado Rush",
+    "flavor": "Purple",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "misc-9-orange",
+    "brand": "Colorado Rush",
+    "flavor": "Orange",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "misc-10-black-cherry",
+    "brand": "True North",
+    "flavor": "Black Cherry",
+    "rating": 2,
+    "buyAgain": "no"
+  },
+  {
+    "id": "misc-11-lemon-lime",
+    "brand": "Jocko Fuel",
+    "flavor": "Lemon Lime",
+    "rating": 2,
+    "buyAgain": "no"
+  },
+  {
+    "id": "misc-12-original",
+    "brand": "NOS",
+    "flavor": "Original",
+    "rating": 2,
+    "buyAgain": "no"
+  },
+  {
+    "id": "misc-13-sour",
+    "brand": "NOS",
+    "flavor": "Sour",
+    "rating": 2,
+    "buyAgain": "no"
+  },
+  {
+    "id": "misc-14-lemon-lime",
+    "brand": "SHOX",
+    "flavor": "Lemon Lime",
+    "rating": 1,
+    "buyAgain": "no"
+  },
+  {
+    "id": "misc-15-original",
+    "brand": "Gym Weeds",
+    "flavor": "Original",
+    "rating": 5,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "misc-16-original",
+    "brand": "Rooster Booster",
+    "flavor": "Original",
+    "rating": 6,
+    "buyAgain": "no"
+  },
+  {
+    "id": "misc-17-red",
+    "brand": "Freedom",
+    "flavor": "Red",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "misc-18-blue",
+    "brand": "Freedom",
+    "flavor": "Blue",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "rockstar-2-original",
+    "brand": "Rockstar",
+    "flavor": "Original",
+    "rating": 4,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "rockstar-3-zero-sugar",
+    "brand": "Rockstar",
+    "flavor": "Zero Sugar",
+    "rating": 2,
+    "buyAgain": "no"
+  },
+  {
+    "id": "rockstar-4-lemon-lime-focus",
+    "brand": "Rockstar",
+    "flavor": "Lemon Lime Focus",
+    "rating": 6,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "rockstar-5-passionfruit-mango-focus",
+    "brand": "Rockstar",
+    "flavor": "Passionfruit Mango Focus",
+    "rating": 5,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "rockstar-6-organge-pineapple",
+    "brand": "Rockstar",
+    "flavor": "Organge Pineapple",
+    "rating": 5,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "rockstar-7-white-peach",
+    "brand": "Rockstar",
+    "flavor": "White Peach",
+    "rating": 6,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "rockstar-8-lemonade-recovery",
+    "brand": "Rockstar",
+    "flavor": "Lemonade Recovery",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "rockstar-9-orangeade-recovery",
+    "brand": "Rockstar",
+    "flavor": "Orangeade Recovery",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "rockstar-10-berryade-recovery",
+    "brand": "Rockstar",
+    "flavor": "Berryade Recovery",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "rockstar-11-strawberry-lemonade-recovery",
+    "brand": "Rockstar",
+    "flavor": "Strawberry Lemonade Recovery",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "rockstar-12-silver-ice-pure-zero",
+    "brand": "Rockstar",
+    "flavor": "Silver Ice Pure Zero",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "rockstar-13-fruit-punch-pure-zero",
+    "brand": "Rockstar",
+    "flavor": "Fruit Punch Pure Zero",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "rockstar-14-tangerine-mango-guava-pure-zero",
+    "brand": "Rockstar",
+    "flavor": "Tangerine Mango Guava Pure Zero",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "rockstar-15-mandarin-orange",
+    "brand": "Rockstar",
+    "flavor": "Mandarin Orange",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "rockstar-16-fruit-punch",
+    "brand": "Rockstar",
+    "flavor": "Fruit Punch",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "rockstar-17-strawberry-peach",
+    "brand": "Rockstar",
+    "flavor": "Strawberry Peach",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "rockstar-18-white-strawberry",
+    "brand": "Rockstar",
+    "flavor": "White Strawberry",
+    "rating": 2,
+    "buyAgain": "no"
+  },
+  {
+    "id": "rockstar-19-hardcore-apple",
+    "brand": "Rockstar",
+    "flavor": "Hardcore Apple",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "rockstar-20-whipped-orange",
+    "brand": "Rockstar",
+    "flavor": "Whipped Orange",
+    "rating": 2,
+    "buyAgain": "no"
+  },
+  {
+    "id": "raze-2-sour-gummy",
+    "brand": "Raze",
+    "flavor": "Sour Gummy",
+    "rating": 9,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "raze-3-apollo",
+    "brand": "Raze",
+    "flavor": "Apollo",
+    "rating": 5,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "raze-4-voodoo",
+    "brand": "Raze",
+    "flavor": "Voodoo",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "raze-5-galaxy-burst",
+    "brand": "Raze",
+    "flavor": "Galaxy Burst",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "raze-6-grape",
+    "brand": "Raze",
+    "flavor": "Grape",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "raze-7-baja-lime",
+    "brand": "Raze",
+    "flavor": "Baja Lime",
+    "rating": 6,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "raze-8-guava-mango",
+    "brand": "Raze",
+    "flavor": "Guava Mango",
+    "rating": 5,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "raze-9-watermelon-frost",
+    "brand": "Raze",
+    "flavor": "Watermelon Frost",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "raze-10-phantom-freeze",
+    "brand": "Raze",
+    "flavor": "Phantom Freeze",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "raze-11-starberry-colada",
+    "brand": "Raze",
+    "flavor": "Starberry Colada",
+    "rating": 5,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "raze-12-south-beach",
+    "brand": "Raze",
+    "flavor": "South Beach",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "raze-13-white-peach",
+    "brand": "Raze",
+    "flavor": "White Peach",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "raze-14-sunny-tea",
+    "brand": "Raze",
+    "flavor": "Sunny Tea",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "raze-15-blue-shock",
+    "brand": "Raze",
+    "flavor": "Blue Shock",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "celcius-2-strawberry-dragonfruit",
+    "brand": "Celcius",
+    "flavor": "Strawberry Dragonfruit",
+    "rating": 6,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "celcius-3-sparkling-orangsicle",
+    "brand": "Celcius",
+    "flavor": "Sparkling Orangsicle",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "celcius-4-sparkling-watermelon",
+    "brand": "Celcius",
+    "flavor": "Sparkling Watermelon",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "celcius-5-sparkling-fruit-punch",
+    "brand": "Celcius",
+    "flavor": "Sparkling Fruit Punch",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "celcius-6-sparkling-mango",
+    "brand": "Celcius",
+    "flavor": "Sparkling Mango",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "celcius-7-sparkling-blue-raspberry",
+    "brand": "Celcius",
+    "flavor": "Sparkling Blue Raspberry",
+    "rating": 5,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "celcius-8-sparkling-cherry-lime",
+    "brand": "Celcius",
+    "flavor": "Sparkling Cherry Lime",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "celcius-9-kiwi-guava",
+    "brand": "Celcius",
+    "flavor": "Kiwi Guava",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "celcius-10-wild-berry",
+    "brand": "Celcius",
+    "flavor": "Wild Berry",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "alani-nu-2-pink-slush",
+    "brand": "Alani Nu",
+    "flavor": "Pink Slush",
+    "rating": 6,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "alani-nu-3-cherry-slush",
+    "brand": "Alani Nu",
+    "flavor": "Cherry Slush",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "alani-nu-4-juicy-peach",
+    "brand": "Alani Nu",
+    "flavor": "Juicy Peach",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "alani-nu-5-hawaiian-shaved-ice",
+    "brand": "Alani Nu",
+    "flavor": "Hawaiian Shaved Ice",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "alani-nu-6-orange-kiss",
+    "brand": "Alani Nu",
+    "flavor": "Orange Kiss",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "alani-nu-7-cherry-twist",
+    "brand": "Alani Nu",
+    "flavor": "Cherry Twist",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "alani-nu-8-dream-float",
+    "brand": "Alani Nu",
+    "flavor": "Dream Float",
+    "rating": 4,
+    "buyAgain": "no"
+  },
+  {
+    "id": "alani-nu-9-cosmic-stardust",
+    "brand": "Alani Nu",
+    "flavor": "Cosmic Stardust",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "alani-nu-10-breezeberry",
+    "brand": "Alani Nu",
+    "flavor": "Breezeberry",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "alani-nu-11-blue-slush",
+    "brand": "Alani Nu",
+    "flavor": "Blue Slush",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "alani-nu-12-starwberry-sunrise",
+    "brand": "Alani Nu",
+    "flavor": "Starwberry Sunrise",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "alani-nu-13-witches-brew",
+    "brand": "Alani Nu",
+    "flavor": "Witches Brew",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "alani-nu-14-sherbet-swirl",
+    "brand": "Alani Nu",
+    "flavor": "Sherbet Swirl",
+    "rating": 6,
+    "buyAgain": "unknown"
+  },
+  {
+    "id": "bucked-up-2-sour-gummy-candy",
+    "brand": "Bucked Up",
+    "flavor": "Sour Gummy Candy",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "bucked-up-3-cherry-candy",
+    "brand": "Bucked Up",
+    "flavor": "Cherry Candy",
+    "rating": 5,
+    "buyAgain": "no"
+  },
+  {
+    "id": "bucked-up-4-irish-apple",
+    "brand": "Bucked Up",
+    "flavor": "Irish Apple",
+    "rating": 2,
+    "buyAgain": "no"
+  },
+  {
+    "id": "3d-energy-2-cucumber-melon",
+    "brand": "3D Energy",
+    "flavor": "Cucumber Melon",
+    "rating": 6,
+    "buyAgain": "no"
+  },
+  {
+    "id": "3d-energy-3-blueberry-mist",
+    "brand": "3D Energy",
+    "flavor": "Blueberry Mist",
+    "rating": 6,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "gorilla-mind-2-red-gummy-fish",
+    "brand": "Gorilla Mind",
+    "flavor": "Red Gummy Fish",
+    "rating": 6,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "gorilla-mind-3-rainbow-sherbert",
+    "brand": "Gorilla Mind",
+    "flavor": "Rainbow Sherbert",
+    "rating": 3,
+    "buyAgain": "no"
+  },
+  {
+    "id": "gorilla-mind-4-white-frost",
+    "brand": "Gorilla Mind",
+    "flavor": "White Frost",
+    "rating": 5,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "gorilla-mind-5-white-gummy-bear",
+    "brand": "Gorilla Mind",
+    "flavor": "White Gummy Bear",
+    "rating": 5,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "gorilla-mind-6-cirtus-rain",
+    "brand": "Gorilla Mind",
+    "flavor": "Cirtus Rain",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "gorilla-mind-7-rocket-frost",
+    "brand": "Gorilla Mind",
+    "flavor": "Rocket Frost",
+    "rating": 6,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "gorilla-mind-8-blue-raspberry",
+    "brand": "Gorilla Mind",
+    "flavor": "Blue Raspberry",
+    "rating": 6,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "gorilla-mind-9-blackberry-lemonade",
+    "brand": "Gorilla Mind",
+    "flavor": "Blackberry Lemonade",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "gorilla-mind-10-black-cherry-vanilla",
+    "brand": "Gorilla Mind",
+    "flavor": "Black Cherry Vanilla",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "gorilla-mind-11-candy-apple",
+    "brand": "Gorilla Mind",
+    "flavor": "Candy Apple",
+    "rating": 8,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "gorilla-mind-12-root-beer",
+    "brand": "Gorilla Mind",
+    "flavor": "Root Beer",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "gorilla-mind-13-fruit-punch",
+    "brand": "Gorilla Mind",
+    "flavor": "Fruit Punch",
+    "rating": 7,
+    "buyAgain": "yes"
+  },
+  {
+    "id": "gorilla-mind-14-wild-grape",
+    "brand": "Gorilla Mind",
+    "flavor": "Wild Grape",
+    "rating": 6,
+    "buyAgain": "no"
+  }
+]

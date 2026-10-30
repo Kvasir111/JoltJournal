@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=JetBrains+Mono:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink text-cream antialiased;
+    min-width: 320px;
+    background-image:
+      linear-gradient(rgba(225, 6, 44, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(225, 6, 44, 0.035) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  ::selection {
+    @apply bg-acid text-ink;
+  }
+
+  button,
+  input,
+  select {
+    font: inherit;
+  }
+}
+
+@layer components {
+  .focus-ring {
+    @apply outline-none transition focus-visible:ring-2 focus-visible:ring-acid focus-visible:ring-offset-2 focus-visible:ring-offset-ink;
+  }
+
+  .tech-label {
+    @apply font-mono text-[0.68rem] font-bold uppercase tracking-[0.24em];
+  }
+
+  .cut-corners {
+    clip-path: polygon(0 11px, 11px 0, 100% 0, 100% calc(100% - 11px), calc(100% - 11px) 100%, 0 100%);
+  }
+
+  .rune-frame {
+    @apply relative;
+  }
+
+  .rune-frame::before,
+  .rune-frame::after {
+    content: '';
+    @apply pointer-events-none absolute h-5 w-5 border-acid transition-all duration-300;
+  }
+
+  .rune-frame::before {
+    @apply left-2 top-2 border-l border-t;
+  }
+
+  .rune-frame::after {
+    @apply bottom-2 right-2 border-b border-r;
+  }
+
+  .rune-frame:hover::before,
+  .rune-frame:hover::after {
+    @apply h-8 w-8;
+  }
+
+  .red-grid {
+    background-image:
+      linear-gradient(rgba(225, 6, 44, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(225, 6, 44, 0.06) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  .rune-sigil {
+    font-family: 'Cinzel', serif;
+    text-shadow: 0 0 36px rgba(225, 6, 44, 0.5);
+  }
+}
