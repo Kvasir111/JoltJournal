@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import { ArrowDown, Bookmark, LoaderCircle, LogOut, Plus, RotateCcw, Shield, Sparkles, Tags, Trophy, UserRound } from '@lucide/vue'
+import { ArrowDown, Bookmark, LoaderCircle, LogIn, LogOut, Plus, RotateCcw, Shield, Sparkles, Tags, Trophy, UserRound } from '@lucide/vue'
 import type { BuyAgain, Drink, DrinkDraft, WishlistDraft, WishlistItem } from '~/types/drink'
 
-const { user, ready: authReady, pending: authPending, error: authError, notice: authNotice, initialize, signIn, signUp, signOut } = useAuth()
-const { drinks, pending, error, hydrate, addDrink, updateDrink, deleteDrink, clear } = useDrinks()
+const { user, ready: authReady, pending: authPending, error: authError, notice: authNotice, initialize, signIn, signOut } = useAuth()
+const { drinks, pending, error, hydrate, addDrink, updateDrink, deleteDrink } = useDrinks()
 const { items: wishlist, pending: wishlistPending, error: wishlistError, hydrate: hydrateWishlist, add: addWishlistItem, remove: removeWishlistItem, clear: clearWishlist } = useWishlist()
 const { pending: brandPending, error: brandError, merge: mergeBrand } = useBrands()
 const dialogOpen = ref(false)
 const wishlistOpen = ref(false)
 const brandManagerOpen = ref(false)
+const authOpen = ref(false)
 const editingDrink = ref<Drink | null>(null)
 const newDrinkSeed = ref<WishlistDraft | null>(null)
 const convertingWishlistId = ref<string | null>(null)
@@ -19,19 +20,20 @@ const sort = ref('rating-desc')
 const minimumLeaderboardDrinks = 4
 const otherBrandLabel = 'Other'
 
-onMounted(() => initialize().catch(() => undefined))
+onMounted(() => {
+  Promise.allSettled([initialize(), hydrate()])
+})
 
 watch(
   () => user.value?.id,
   async (userId, previousUserId) => {
     if (userId === previousUserId) return
-    clear()
     clearWishlist()
     dialogOpen.value = false
     wishlistOpen.value = false
     brandManagerOpen.value = false
     editingDrink.value = null
-    if (userId) await Promise.all([hydrate(), hydrateWishlist()]).catch(() => undefined)
+    if (userId) await hydrateWishlist().catch(() => undefined)
   }
 )
 
@@ -163,10 +165,18 @@ const selectBrand = (brand: string) => {
   selectedBrand.value = selectedBrand.value === brand ? 'all' : brand
   document.querySelector('#drinks')?.scrollIntoView({ behavior: 'smooth' })
 }
-const handleSignIn = (email: string, password: string) => signIn(email, password).catch(() => undefined)
-const handleSignUp = (email: string, password: string) => signUp(email, password).catch(() => undefined)
+const handleSignIn = async (email: string, password: string) => {
+  try {
+    await signIn(email, password)
+    authOpen.value = false
+  } catch {
+    // The owner dialog displays the authentication error.
+  }
+}
 const handleSignOut = () => signOut().catch(() => undefined)
-const reloadAll = () => Promise.all([hydrate(), hydrateWishlist()]).catch(() => undefined)
+const reloadAll = () => (user.value
+  ? Promise.all([hydrate(), hydrateWishlist()])
+  : hydrate()).catch(() => undefined)
 </script>
 
 <template>
@@ -181,8 +191,8 @@ const reloadAll = () => Promise.all([hydrate(), hydrateWishlist()]).catch(() => 
           </span>
         </a>
         <div class="flex items-center gap-2 sm:gap-4">
-          <a v-if="user" class="focus-ring hidden rounded-lg px-3 py-2 text-sm font-semibold text-muted hover:text-cream xl:block" href="#brands">Brands</a>
-          <a v-if="user" class="focus-ring hidden rounded-lg px-3 py-2 text-sm font-semibold text-muted hover:text-cream xl:block" href="#drinks">All drinks</a>
+          <a class="focus-ring hidden rounded-lg px-3 py-2 text-sm font-semibold text-muted hover:text-cream xl:block" href="#brands">Brands</a>
+          <a class="focus-ring hidden rounded-lg px-3 py-2 text-sm font-semibold text-muted hover:text-cream xl:block" href="#drinks">All drinks</a>
           <button v-if="user" class="focus-ring hidden items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold text-muted hover:text-cream lg:inline-flex" type="button" @click="wishlistOpen = true"><Bookmark :size="16" /> Wishlist <span class="font-mono text-[0.65rem] text-acid">{{ wishlist.length }}</span></button>
           <button v-if="user" class="focus-ring hidden rounded-lg p-2.5 text-muted hover:text-cream lg:block" type="button" aria-label="Manage brands" @click="brandManagerOpen = true"><Tags :size="18" /></button>
           <span v-if="user" class="hidden max-w-40 items-center gap-2 truncate font-mono text-[0.68rem] text-muted md:flex"><UserRound :size="15" class="shrink-0 text-acid" /> {{ user.email }}</span>
@@ -191,6 +201,9 @@ const reloadAll = () => Promise.all([hydrate(), hydrateWishlist()]).catch(() => 
           </button>
           <button v-if="user" class="focus-ring cut-corners border border-white/10 p-2.5 text-muted hover:border-acid hover:text-acid disabled:cursor-wait disabled:opacity-50" type="button" :disabled="authPending" aria-label="Sign out" @click="handleSignOut">
             <LogOut :size="18" />
+          </button>
+          <button v-else class="focus-ring cut-corners inline-flex items-center gap-2 border border-white/10 px-3 py-2.5 font-mono text-xs font-bold uppercase tracking-wider text-muted hover:border-acid hover:text-cream" type="button" @click="authOpen = true">
+            <LogIn :size="17" /> <span class="hidden sm:inline">Curator sign in</span><span class="sm:hidden">Sign in</span>
           </button>
         </div>
       </div>
@@ -203,12 +216,10 @@ const reloadAll = () => Promise.all([hydrate(), hydrateWishlist()]).catch(() => 
       </div>
     </main>
 
-    <AuthPanel v-else-if="!user" :pending="authPending" :error="authError" :notice="authNotice" @sign-in="handleSignIn" @sign-up="handleSignUp" />
-
     <main v-else id="top">
-      <div v-if="error || wishlistError" class="border-b border-red-500/40 bg-red-950/80">
+      <div v-if="error || (user && wishlistError)" class="border-b border-red-500/40 bg-red-950/80">
         <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-          <p class="font-mono text-xs text-red-100">Archive link failed: {{ error || wishlistError }}</p>
+          <p class="font-mono text-xs text-red-100">Archive link failed: {{ error || (user ? wishlistError : null) }}</p>
           <button class="focus-ring font-mono text-xs font-bold uppercase tracking-wider text-white hover:text-red-200" type="button" @click="reloadAll">Retry</button>
         </div>
       </div>
@@ -275,6 +286,7 @@ const reloadAll = () => Promise.all([hydrate(), hydrateWishlist()]).catch(() => 
         :query="query"
         :buy-again="buyAgainFilter"
         :sort="sort"
+        :editable="Boolean(user)"
         @edit="openEdit"
         @reset="clearFilters"
         @update:query="query = $event"
@@ -283,7 +295,7 @@ const reloadAll = () => Promise.all([hydrate(), hydrateWishlist()]).catch(() => 
       />
     </main>
 
-    <footer v-if="user" class="border-t border-acid/20 bg-panel/50 pb-24 md:pb-0">
+    <footer class="border-t border-acid/20 bg-panel/50" :class="user ? 'pb-24 md:pb-0' : ''">
       <div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-8 text-sm text-muted sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
         <p>Jolt Journal · The archive is backed by Supabase.</p>
         <button class="focus-ring w-fit rounded-lg px-2 py-1 font-semibold hover:text-cream disabled:cursor-wait disabled:opacity-50" type="button" :disabled="pending || wishlistPending" @click="reloadAll">Reload database</button>
@@ -299,5 +311,6 @@ const reloadAll = () => Promise.all([hydrate(), hydrateWishlist()]).catch(() => 
     <DrinkDialog v-if="user" :open="dialogOpen" :drink="editingDrink" :seed="newDrinkSeed" :brands="brands" @close="dialogOpen = false" @save="saveDrink" @delete="removeEditingDrink" />
     <WishlistDialog v-if="user" :open="wishlistOpen" :items="wishlist" :brands="brands" :pending="wishlistPending" :error="wishlistError" @close="wishlistOpen = false" @add="addToWishlist" @remove="removeWishlistItem($event).catch(() => undefined)" @rate="rateWishlistItem" />
     <BrandManagerDialog v-if="user" :open="brandManagerOpen" :brands="brandOptions" :pending="brandPending" :error="brandError" @close="brandManagerOpen = false" @merge="mergeCollectionBrand" />
+    <AuthPanel v-if="!user && authOpen" :pending="authPending" :error="authError" :notice="authNotice" @close="authOpen = false" @sign-in="handleSignIn" />
   </div>
 </template>

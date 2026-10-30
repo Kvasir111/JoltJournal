@@ -2,7 +2,7 @@
 
 ## Project overview
 
-Jolt Journal is a Nuxt application for tracking energy drink flavors, 1–10 ratings, and whether each flavor is worth buying again. Supabase persistence and email/password authentication are implemented; agent-facing tools are intentionally deferred.
+Jolt Journal is a public Nuxt application for browsing one curator's energy drink flavor ratings, 1–10 scores, and repeat-buy verdicts. Supabase persistence and owner-only email/password administration are implemented; agent-facing tools are intentionally deferred.
 
 ## Stack
 
@@ -32,10 +32,10 @@ The `20261030132254_create_drink_tracker` and `20261030140133_add_authenticated_
 - `app/app.vue` owns the dashboard, filters, and high-level interactions.
 - `app/components/` contains the drink table and add/edit dialog.
 - `app/composables/useAuth.ts` owns browser authentication state and Supabase sessions.
-- `app/composables/useDrinks.ts` sends the current access token to the server-side `/api/drinks` CRUD boundary.
+- `app/composables/useDrinks.ts` reads the public archive without a session and sends the current access token for writes.
 - `app/data/drinks.json` is generated seed data. Do not hand-edit it; update the workbook and run the import command.
 - `app/types/drink.ts` defines the shared data model.
-- `server/api/drinks/` owns authenticated HTTP CRUD endpoints. `server/utils/` validates access tokens and uses a user-scoped Supabase client so RLS remains authoritative.
+- `server/api/drinks/` exposes a public GET endpoint and owner-only write endpoints. `server/utils/` validates access tokens and owner status while RLS remains authoritative.
 - `supabase/migrations/` is the source of truth for the database schema and security policies.
 - `scripts/seed-supabase.mjs` performs the repeat-safe initial data load and is the only code that needs `SUPABASE_SECRET_KEY`.
 
@@ -52,6 +52,8 @@ The `20261030132254_create_drink_tracker` and `20261030140133_add_authenticated_
 - Never load `SUPABASE_SECRET_KEY` into Nuxt runtime config or expose it to client code. It is only for trusted maintenance scripts.
 - Keep RLS enabled and privileges explicit on every Data API table. Add per-user policies with authentication rather than granting anonymous writes.
 - Ordinary CRUD must use the authenticated client and must never fall back to the secret client.
+- Public access is read-only and limited by RLS to the user identified in `public.site_settings`; the wishlist remains private.
+- Do not expose account creation in the app. Only the designated site owner may authenticate as a curator or mutate data.
 - Run both type checking and a production build before handing off changes.
 
 ## Future work

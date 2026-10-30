@@ -1,10 +1,15 @@
 begin;
-select plan(23);
+select plan(27);
 
 insert into auth.users (id, email)
 values
   ('11111111-1111-1111-1111-111111111111', 'owner@example.com'),
   ('22222222-2222-2222-2222-222222222222', 'other@example.com');
+
+insert into public.site_settings (singleton, owner_user_id)
+values (true, '11111111-1111-1111-1111-111111111111')
+on conflict (singleton) do update
+set owner_user_id = excluded.owner_user_id;
 
 insert into public.brands (name, normalized_name)
 values ('Policy Test Brand', 'policy test brand');
@@ -26,17 +31,15 @@ select '22222222-2222-2222-2222-222222222222', id, 'Other Wish', 'other wish'
 from public.brands where normalized_name = 'policy test brand';
 
 set local role anon;
-select throws_ok(
-  $$select * from public.brands$$,
-  '42501',
-  null,
-  'anonymous users cannot read brands'
+select results_eq(
+  $$select name from public.brands order by name$$,
+  array['Policy Test Brand'::text],
+  'anonymous visitors can read brands'
 );
-select throws_ok(
-  $$select * from public.drinks$$,
-  '42501',
-  null,
-  'anonymous users cannot read drinks'
+select results_eq(
+  $$select flavor from public.drinks order by flavor$$,
+  array['Owner Drink'::text],
+  'anonymous visitors can read only the owner rating collection'
 );
 select throws_ok(
   $$select * from public.wishlist_items$$,
@@ -52,12 +55,39 @@ select throws_ok(
 );
 
 set local role authenticated;
+select set_config('request.jwt.claims', '{"sub":"22222222-2222-2222-2222-222222222222"}', true);
+
+select results_eq(
+  $$select flavor from public.drinks order by flavor$$,
+  array['Owner Drink'::text],
+  'authenticated non-owners see the same public rating collection'
+);
+select throws_ok(
+  $$insert into public.brands (name, normalized_name) values ('Blocked Brand', 'blocked brand')$$,
+  '42501',
+  null,
+  'authenticated non-owners cannot create brands'
+);
+select throws_ok(
+  $$insert into public.drinks (user_id, brand_id, flavor, normalized_flavor, rating)
+    select '22222222-2222-2222-2222-222222222222', id, 'Blocked Drink', 'blocked drink', 5
+    from public.brands where normalized_name = 'policy test brand'$$,
+  '42501',
+  null,
+  'authenticated non-owners cannot create ratings'
+);
+select results_eq(
+  $$select count(*)::bigint from public.wishlist_items$$,
+  array[0::bigint],
+  'authenticated non-owners cannot read the private wishlist'
+);
+
 select set_config('request.jwt.claims', '{"sub":"11111111-1111-1111-1111-111111111111"}', true);
 
 select results_eq(
   $$select flavor from public.drinks order by flavor$$,
   array['Owner Drink'::text],
-  'users can read only their own drinks'
+  'the owner can read the public rating collection'
 );
 select results_eq(
   $$select name from public.brands where normalized_name = 'policy test brand'$$,
@@ -71,7 +101,7 @@ select results_eq(
 );
 select lives_ok(
   $$insert into public.brands (name, normalized_name) values ('New Test Brand', 'new test brand')$$,
-  'authenticated users can create brands'
+  'the owner can create brands'
 );
 select throws_ok(
   $$update public.brands set name = 'Changed' where normalized_name = 'policy test brand'$$,
@@ -83,7 +113,7 @@ select lives_ok(
   $$insert into public.drinks (user_id, brand_id, flavor, normalized_flavor, rating)
     select '11111111-1111-1111-1111-111111111111', id, 'New Owner Drink', 'new owner drink', 7
     from public.brands where normalized_name = 'policy test brand'$$,
-  'users can create their own drinks'
+  'the owner can create ratings'
 );
 select throws_ok(
   $$insert into public.drinks (user_id, brand_id, flavor, normalized_flavor, rating)
@@ -91,13 +121,13 @@ select throws_ok(
     from public.brands where normalized_name = 'policy test brand'$$,
   '42501',
   null,
-  'users cannot create drinks for another owner'
+  'the owner cannot create ratings assigned to another user'
 );
 select lives_ok(
   $$insert into public.wishlist_items (user_id, brand_id, flavor, normalized_flavor)
     select '11111111-1111-1111-1111-111111111111', id, 'New Owner Wish', 'new owner wish'
     from public.brands where normalized_name = 'policy test brand'$$,
-  'users can create their own wishlist items'
+  'the owner can create wishlist items'
 );
 select throws_ok(
   $$insert into public.wishlist_items (user_id, brand_id, flavor, normalized_flavor)
@@ -105,7 +135,7 @@ select throws_ok(
     from public.brands where normalized_name = 'policy test brand'$$,
   '42501',
   null,
-  'users cannot create wishlist items for another owner'
+  'the owner cannot create wishlist items for another user'
 );
 select lives_ok(
   $$update public.drinks set rating = 9 where flavor = 'Owner Drink'$$,

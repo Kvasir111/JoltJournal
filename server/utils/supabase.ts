@@ -2,6 +2,24 @@ import { createClient, type SupabaseClient, type User } from '@supabase/supabase
 import type { H3Event } from 'h3'
 import type { Database } from '~/types/database'
 
+export const useSupabasePublic = (): SupabaseClient<Database> => {
+  const config = useRuntimeConfig()
+  const url = config.public.supabaseUrl
+  const publishableKey = config.public.supabasePublishableKey
+
+  if (!url || !publishableKey) {
+    throw createError({
+      statusCode: 503,
+      statusMessage: 'Supabase authentication is not configured.'
+    })
+  }
+
+  return createClient<Database>(url, publishableKey, {
+    auth: { autoRefreshToken: false, persistSession: false },
+    global: { headers: { 'X-Client-Info': 'jolt-journal-public-server' } }
+  })
+}
+
 export const useSupabaseForUser = async (event: H3Event): Promise<{
   supabase: SupabaseClient<Database>
   user: User
@@ -40,6 +58,14 @@ export const useSupabaseForUser = async (event: H3Event): Promise<{
     throw createError({
       statusCode: 401,
       statusMessage: 'Your session is invalid or has expired.'
+    })
+  }
+
+  const { data: isOwner, error: ownerError } = await supabase.rpc('is_site_owner')
+  if (ownerError || !isOwner) {
+    throw createError({
+      statusCode: 403,
+      statusMessage: 'This account does not have curator access.'
     })
   }
 

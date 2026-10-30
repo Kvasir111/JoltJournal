@@ -8,6 +8,7 @@ defineProps<{
   query: string
   buyAgain: BuyAgain | 'all'
   sort: string
+  editable: boolean
 }>()
 
 const emit = defineEmits<{
@@ -52,17 +53,17 @@ const scoreTone = (rating: number) => {
     </div>
 
     <div v-if="drinks.length" class="cut-corners overflow-hidden border border-white/10 bg-panel shadow-lift">
-      <div class="hidden grid-cols-[1.1fr_1.5fr_110px_130px_44px] gap-4 border-b border-white/10 px-5 py-3 text-xs font-bold uppercase tracking-[0.18em] text-muted md:grid">
-        <span>Brand</span><span>Flavor</span><span>Rating</span><span>Buy again</span><span />
+      <div class="hidden gap-4 border-b border-white/10 px-5 py-3 text-xs font-bold uppercase tracking-[0.18em] text-muted md:grid" :class="editable ? 'grid-cols-[1.1fr_1.5fr_110px_130px_44px]' : 'grid-cols-[1.1fr_1.5fr_110px_130px]'">
+        <span>Brand</span><span>Flavor</span><span>Rating</span><span>Buy again</span><span v-if="editable" />
       </div>
-      <button v-for="drink in drinks" :key="drink.id" class="focus-ring group grid w-full grid-cols-[1fr_auto] gap-x-4 gap-y-2 border-b border-white/5 px-4 py-4 text-left transition last:border-b-0 hover:bg-acid/[0.045] md:grid-cols-[1.1fr_1.5fr_110px_130px_44px] md:items-center md:px-5" type="button" @click="emit('edit', drink)">
+      <button v-for="drink in drinks" :key="drink.id" class="focus-ring group grid w-full grid-cols-[1fr_auto] gap-x-4 gap-y-2 border-b border-white/5 px-4 py-4 text-left transition last:border-b-0 md:items-center md:px-5" :class="editable ? 'hover:bg-acid/[0.045] md:grid-cols-[1.1fr_1.5fr_110px_130px_44px]' : 'cursor-default md:grid-cols-[1.1fr_1.5fr_110px_130px]'" type="button" :disabled="!editable" @click="editable && emit('edit', drink)">
         <span class="font-bold text-cream">{{ drink.brand }}</span>
         <span class="col-start-1 text-sm text-muted md:col-auto md:text-cream">{{ drink.flavor }}</span>
         <span class="cut-corners row-span-2 row-start-1 justify-self-end px-2.5 py-1 font-mono text-xs font-extrabold md:row-auto md:justify-self-start" :class="scoreTone(drink.rating)">{{ drink.rating.toFixed(1) }}</span>
         <span class="w-fit rounded-full border px-2.5 py-1 text-xs font-bold" :class="drink.buyAgain === 'yes' ? 'border-acid/40 text-acid' : drink.buyAgain === 'no' ? 'border-white/10 text-muted' : 'border-violet/40 text-violet'">
           {{ drink.buyAgain === 'yes' ? 'Yes' : drink.buyAgain === 'no' ? 'No' : 'Not sure' }}
         </span>
-        <Pencil class="hidden text-muted transition group-hover:text-acid md:block" :size="17" />
+        <Pencil v-if="editable" class="hidden text-muted transition group-hover:text-acid md:block" :size="17" />
       </button>
     </div>
 

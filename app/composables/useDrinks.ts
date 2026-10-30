@@ -33,7 +33,7 @@ export const useDrinks = () => {
 
   const hydrate = async () => {
     await run(async () => {
-      drinks.value = await $fetch<Drink[]>('/api/drinks', { headers: await authHeaders() })
+      drinks.value = await $fetch<Drink[]>('/api/drinks')
     })
   }
 

@@ -107,9 +107,31 @@ export interface Database {
           }
         ]
       }
+      site_settings: {
+        Row: {
+          singleton: boolean
+          owner_user_id: string
+          created_at: string
+        }
+        Insert: {
+          singleton?: boolean
+          owner_user_id: string
+          created_at?: string
+        }
+        Update: {
+          singleton?: boolean
+          owner_user_id?: string
+          created_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: Record<string, never>
     Functions: {
+      is_site_owner: {
+        Args: Record<PropertyKey, never>
+        Returns: boolean
+      }
       merge_my_brand: {
         Args: {
           source_brand_id: number
